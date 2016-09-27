@@ -1,9 +1,21 @@
 # nand2tetris
-Building a Modern Computer from First Principles Using HDL(Hardware Description Language)
 
-[TOC]
+![nand2tetris](http://nand2tetris.org/banner.png)  
 
-# Project 1: Elementary Logic Gates
+Introduction
+------------
+
+This project will build a Modern Computer from First Principles Using HDL(Hardware Description Language), refer from http://nand2tetris.org/
+
+Table of Contents
+---
+
+- [Project 1](#project1)
+    - [Resources](#resources)
+
+## Project1
+building elementary logic gates listed below  
+
 |Index|Chip(HDL)|Description|Test Script|Compare FIile|
 |---|---|---|---|---|
 |0.|Nand|Nand gate(primitive)|
@@ -23,7 +35,7 @@ Building a Modern Computer from First Principles Using HDL(Hardware Description 
 |14.|DMux4Way|    4-way demultiplexor| DMux4Way.tst|    DMux4Way.cmp|
 |15.|DMux8Way|    8-way demultiplexor| DMux8Way.tst|    DMux8Way.cmp|
 
-## Resources
+### Resources
 - [Chapter 1](http://www.nand2tetris.org/chapters/chapter%2001.pdf) of *The Elements of Computing Systems*.
 - [Appendix A: Hardware Description Language (HDL)](http://www.nand2tetris.org/chapters/appendix%20A.pdf) of *The Elements of Computing Systems* (use as technical reference, when needed)
 - [HDL Survival Guide](http://www.nand2tetris.org/software/HDL%20Survival%20Guide.html), written by Mark Armbrust (use as technical reference, when needed)
