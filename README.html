@@ -1020,13 +1020,24 @@ body .markdown-body
 <p>This project will build a Modern Computer from First Principles Using HDL(Hardware Description Language), refer from <a href="http://nand2tetris.org/">http://nand2tetris.org/</a></p>
 <h2 id="table-of-contents"><a name="user-content-table-of-contents" href="#table-of-contents" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Table of Contents</h2>
 <ul>
-<li><a href="#project1">Project 1</a><ul>
+<li><a href="#project1">Project 1: Elementary Logic Gates</a><ul>
 <li><a href="#resources">Resources</a></li>
 </ul>
 </li>
 </ul>
 <h2 id="project1"><a name="user-content-project1" href="#project1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Project1</h2>
-<p>building elementary logic gates listed below  </p>
+<p>The interface of <code>Nand</code> is:<br />
+<pre><code>Nand(a= ,
+     b= ,
+     out= );
+</code></pre><br />
+<u>We can build:</u></p>
+<ul>
+<li><strong>Not(a) = Nand(a,a)</strong> </li>
+<li><strong>And(a,b) = Not(Nand(a,b))</strong> </li>
+<li><strong>Or(a,b) = Not(And(Not(a), Not(b)))</strong> </li>
+</ul>
+<p>building elementary logic gates listed below based on <code>Nand</code></p>
 <table>
 <thead>
 <tr>
@@ -1157,4 +1168,5 @@ body .markdown-body
 <li><a href="http://www.nand2tetris.org/chapters/chapter%2001.pdf">Chapter 1</a> of <em>The Elements of Computing Systems</em>.</li>
 <li><a href="http://www.nand2tetris.org/chapters/appendix%20A.pdf">Appendix A: Hardware Description Language (HDL)</a> of <em>The Elements of Computing Systems</em> (use as technical reference, when needed)</li>
 <li><a href="http://www.nand2tetris.org/software/HDL%20Survival%20Guide.html">HDL Survival Guide</a>, written by Mark Armbrust (use as technical reference, when needed)</li>
+<li><a href="https://www.coursera.org/learn/build-a-computer/supplement/Dkosx/faq">FAQ</a></li>
 </ul></article></body></html>

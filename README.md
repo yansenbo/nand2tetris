@@ -10,11 +10,23 @@ This project will build a Modern Computer from First Principles Using HDL(Hardwa
 Table of Contents
 ---
 
-- [Project 1](#project1)
+- [Project 1: Elementary Logic Gates](#project1)
     - [Resources](#resources)
 
 ## Project1
-building elementary logic gates listed below  
+The interface of `Nand` is:
+```
+Nand(a= ,
+     b= ,
+     out= );
+```
+<u>We can build:</u>
+
+-  **Not(a) = Nand(a,a)** 
+-  **And(a,b) = Not(Nand(a,b))** 
+-  **Or(a,b) = Not(And(Not(a), Not(b)))** 
+
+building elementary logic gates listed below based on `Nand`
 
 |Index|Chip(HDL)|Description|Test Script|Compare FIile|
 |---|---|---|---|---|
@@ -39,3 +51,4 @@ building elementary logic gates listed below
 - [Chapter 1](http://www.nand2tetris.org/chapters/chapter%2001.pdf) of *The Elements of Computing Systems*.
 - [Appendix A: Hardware Description Language (HDL)](http://www.nand2tetris.org/chapters/appendix%20A.pdf) of *The Elements of Computing Systems* (use as technical reference, when needed)
 - [HDL Survival Guide](http://www.nand2tetris.org/software/HDL%20Survival%20Guide.html), written by Mark Armbrust (use as technical reference, when needed)
+- [FAQ](https://www.coursera.org/learn/build-a-computer/supplement/Dkosx/faq)
